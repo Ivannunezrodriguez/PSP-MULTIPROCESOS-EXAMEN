@@ -1,41 +1,65 @@
-PSP-SS-FRUTERIA
-Este proyecto es una aplicación cliente-servidor desarrollada en Java que simula la gestión de inventario de una frutería. Utiliza sockets para la comunicación entre el cliente y el servidor, permitiendo consultar y actualizar el inventario de productos.
+PSP-MULTIPROCESOS-EXAMEN
+Este proyecto es una práctica desarrollada en Java que simula un centro de exámenes utilizando múltiples procesos. Forma parte de las actividades del módulo de Programación de Servicios y Procesos (PSP) del ciclo formativo de Desarrollo de Aplicaciones Multiplataforma (DAM).
 
-Estructura del Proyecto
-El repositorio contiene las siguientes carpetas y archivos:
+🧠 Descripción
+La aplicación simula un entorno donde varios procesos (representando estudiantes) acceden a un centro de exámenes. Se implementan mecanismos de sincronización para controlar el acceso concurrente y asegurar que se respeten las restricciones del sistema, como el número máximo de estudiantes permitidos simultáneamente.
 
-T2-1-CLIENTEM: Contiene el código fuente del cliente que se conecta al servidor para realizar consultas sobre el inventario.
+📁 Estructura del Proyecto
+css
+Copiar
+Editar
+PSP-MULTIPROCESOS-EXAMEN/
+├── src/
+│   └── [Clases Java del proyecto]
+├── out/
+│   └── production/
+│       └── Actividad UF1-2/
+├── Actividad UF1-2. Multitarea. Centro de exámenes.INR.docx
+├── Actividad UF1-2. Multitarea. Centro de exámenes.INR.pdf
+├── Actividad UF1-2.iml
+├── .gitattributes
+└── .idea/
+src/: Contiene el código fuente en Java.
 
-T2-1-SERVIDORM: Contiene el código fuente del servidor que gestiona el inventario y responde a las solicitudes del cliente.
+out/: Directorio de salida con los archivos compilados.
 
-Actividad UF2-1. Servidor socket para consulta de inventario fruteríaINR.docx/pdf: Documentación detallada de la actividad, incluyendo los requisitos y el funcionamiento del sistema.
+Actividad UF1-2. Multitarea. Centro de exámenes.INR.docx/pdf: Documentación de la actividad, que describe los objetivos y requisitos del proyecto.
 
-Funcionalidades
-Consulta de Inventario: El cliente puede solicitar información sobre los productos disponibles en la frutería.
+.idea/ y .iml: Archivos de configuración del entorno de desarrollo (IntelliJ IDEA).
 
-Actualización de Inventario: El servidor puede actualizar las cantidades de los productos en el inventario.
+⚙️ Tecnologías Utilizadas
+Java: Lenguaje de programación principal del proyecto.
 
-Comunicación Cliente-Servidor: Utiliza sockets para establecer la comunicación entre el cliente y el servidor.
+Programación Concurrente: Uso de procesos e hilos para simular el entorno multitarea.
 
-Requisitos
-Java Development Kit (JDK) 8 o superior.
+Mecanismos de Sincronización: Implementación de semáforos o monitores para controlar el acceso concurrente.
 
-Un entorno de desarrollo como Eclipse o IntelliJ IDEA.
-
-Cómo Ejecutar
-Clona este repositorio en tu máquina local:
+🚀 Instrucciones de Ejecución
+Clonar el Repositorio:
 
 bash
 Copiar
 Editar
-git clone https://github.com/Ivannunezrodriguez/PSP-SS-FRUTERIA.git
-Abre el proyecto en tu entorno de desarrollo preferido.
+git clone https://github.com/Ivannunezrodriguez/PSP-MULTIPROCESOS-EXAMEN.git
+Importar el Proyecto:
 
-Compila y ejecuta primero el servidor ubicado en T2-1-SERVIDORM.
+Abre el proyecto en tu entorno de desarrollo Java preferido (por ejemplo, IntelliJ IDEA).
 
-Luego, compila y ejecuta el cliente ubicado en T2-1-CLIENTEM.
+Compilar el Proyecto:
 
-Utiliza el cliente para enviar solicitudes al servidor y gestionar el inventario de la frutería.
+Asegúrate de que el proyecto se compile correctamente. Si utilizas IntelliJ IDEA, el proyecto debería compilarse automáticamente al abrirlo.
 
-Autor
-Iván Núñez Rodríguez - Ivannunezrodriguez
+Ejecutar la Aplicación:
+
+Ejecuta la clase principal que inicia la simulación del centro de exámenes. Observa cómo los procesos (estudiantes) acceden y salen del centro respetando las restricciones establecidas.
+
+📝 Notas Adicionales
+Asegúrate de que los mecanismos de sincronización estén correctamente implementados para evitar condiciones de carrera.
+
+Puedes modificar los parámetros del sistema (como el número máximo de estudiantes permitidos) para observar diferentes comportamientos en la simulación.
+
+👨‍💻 Autor
+Iván Núñez Rodríguez - GitHub
+
+📄 Licencia
+Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
